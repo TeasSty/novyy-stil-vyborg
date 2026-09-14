@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label=">2K9 AB8;L">
+  <circle cx="100" cy="100" r="96" fill="#f5f2ed"/>
+  <circle cx="100" cy="100" r="92" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#c62828" stroke-width="1.2" opacity="0.85"/>
+  <circle cx="100" cy="100" r="84" fill="none" stroke="#1e3a5f" stroke-width="1.2" opacity="0.75"/>
+  <text x="100" y="88" text-anchor="middle" font-family="Arial Narrow, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="3" fill="#1a1a1a">+</text>
+  <line x1="58" y1="100" x2="142" y2="100" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="100" y="126" text-anchor="middle" font-family="Arial Narrow, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="4" fill="#1a1a1a">!",</text>
+</svg>
