@@ -32,17 +32,23 @@ function onScroll() {
   header.classList.toggle('is-scrolled', window.scrollY > 12)
 }
 
+function setMenuOpen(open) {
+  if (!menuBtn || !mobileNav || !header) return
+  header.classList.toggle('is-menu-open', open)
+  document.documentElement.classList.toggle('is-menu-open', open)
+  document.body.classList.toggle('is-menu-open', open)
+  menuBtn.setAttribute('aria-expanded', String(open))
+  mobileNav.hidden = !open
+}
+
 function closeMenu() {
-  if (!menuBtn || !mobileNav) return
-  menuBtn.setAttribute('aria-expanded', 'false')
-  mobileNav.hidden = true
+  setMenuOpen(false)
 }
 
 function toggleMenu() {
-  if (!menuBtn || !mobileNav) return
+  if (!menuBtn) return
   const open = menuBtn.getAttribute('aria-expanded') === 'true'
-  menuBtn.setAttribute('aria-expanded', String(!open))
-  mobileNav.hidden = open
+  setMenuOpen(!open)
 }
 
 function setReload(index, { spin = false } = {}) {
@@ -126,6 +132,12 @@ function initReveals() {
 
 menuBtn?.addEventListener('click', toggleMenu)
 mobileNav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu))
+window.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') closeMenu()
+})
+window.addEventListener('resize', () => {
+  if (window.matchMedia('(min-width: 960px)').matches) closeMenu()
+})
 window.addEventListener('scroll', onScroll, { passive: true })
 onScroll()
 initReload()
