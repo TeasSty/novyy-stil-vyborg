@@ -1,8 +1,7 @@
 node_modules
 dist
+.tmp-assets
+.tmp-research
+.tmp-qa
 .DS_Store
 *.local
-.vite
-
-research/
-
