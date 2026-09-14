@@ -1,0 +1,620 @@
+section {
+  padding-block: clamp(3rem, 8vh, 6.5rem);
+}
+
+/* ── 02 почему доверять ──────────────────────────────────── */
+
+.story__grid {
+  margin-top: clamp(2rem, 4vh, 3rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: clamp(1.75rem, 4vw, 3.5rem);
+  align-items: start;
+}
+
+.pull p {
+  font-size: var(--t-xl);
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+  text-indent: -0.42em;
+  text-wrap: pretty;
+}
+
+.pull footer {
+  margin-top: 1.1rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--line-ink-soft);
+  font-size: var(--t-sm);
+  color: var(--ink-mute);
+  max-width: 42ch;
+}
+
+.pull footer a {
+  display: block;
+  margin-top: 0.3rem;
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.pull footer a:hover {
+  color: #a8146a;
+}
+
+.ladder div {
+  display: grid;
+  gap: 0.3rem;
+  padding: 0.9rem 0;
+  border-top: 1px solid var(--line-ink-soft);
+}
+
+.ladder div:last-child {
+  border-bottom: 1px solid var(--line-ink-soft);
+}
+
+.ladder dt {
+  font: 500 var(--t-xs) var(--mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #966a2c;
+}
+
+.ladder dd {
+  font-size: var(--t-sm);
+  line-height: 1.6;
+  color: var(--ink-dim);
+}
+
+.story__cols {
+  margin-top: clamp(2rem, 5vh, 3.5rem);
+  padding-top: clamp(1.5rem, 3vh, 2.5rem);
+  border-top: 1px solid var(--ink);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.75rem, 4vw, 3.5rem);
+  align-items: start;
+}
+
+.story__cols h3 {
+  margin-bottom: 0.75rem;
+}
+
+.facts div {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.8rem 0;
+  border-top: 1px solid var(--line-ink-soft);
+}
+
+.facts div:last-child {
+  border-bottom: 1px solid var(--line-ink-soft);
+}
+
+.facts dt {
+  font-size: var(--t-sm);
+  font-weight: 600;
+}
+
+.facts dd {
+  font-size: var(--t-sm);
+  line-height: 1.55;
+  color: var(--ink-dim);
+}
+
+.facts--muted dt {
+  color: var(--ink-dim);
+  font-weight: 500;
+}
+
+.facts--muted dd {
+  color: var(--ink-mute);
+}
+
+/* ── 03 мастера ──────────────────────────────────────────── */
+
+.masters {
+  padding-top: 0;
+}
+
+/* Волосы — самая большая команда, поэтому занимает всю левую колонку. */
+.roster {
+  margin-top: clamp(1.75rem, 4vh, 2.5rem);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.75rem, 4vh, 2.5rem) clamp(1.5rem, 3.5vw, 3rem);
+  align-items: start;
+}
+
+.crew:first-child {
+  grid-row: span 2;
+}
+
+.crew__title {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid var(--ink);
+  font: 500 var(--t-xs) var(--mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.crew__title span {
+  color: var(--ink-mute);
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+.crew__row {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.5fr);
+  gap: 1rem;
+  align-items: baseline;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--line-ink-soft);
+}
+
+.crew__name {
+  font-size: var(--t-md);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.crew__skill {
+  font-size: var(--t-sm);
+  color: var(--ink-dim);
+}
+
+.crew__note {
+  font-size: var(--t-sm);
+  color: var(--ink-mute);
+}
+
+.crew__note::before {
+  content: '— ';
+}
+
+/* ── 04 работы ───────────────────────────────────────────── */
+
+.works {
+  padding-top: 0;
+}
+
+.cases {
+  margin-top: clamp(1.75rem, 4vh, 2.5rem);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.5rem, 3.5vw, 3rem);
+}
+
+.case__shots {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.35rem;
+}
+
+.case--single .case__shots {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.shot {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: #ddd7ce;
+}
+
+.shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.case--single .shot img {
+  height: auto;
+}
+
+.shot__tag {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0.3rem 0.55rem;
+  background: var(--ink);
+  color: var(--paper);
+  font: 500 0.625rem var(--mono);
+  font-style: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.case figcaption {
+  margin-top: 1rem;
+}
+
+.case__label {
+  font: 400 var(--t-xs) var(--mono);
+  letter-spacing: 0.04em;
+  color: var(--ink-mute);
+}
+
+.case__label b {
+  font-weight: 500;
+  color: #966a2c;
+}
+
+.case__title {
+  margin-top: 0.5rem;
+  font-size: var(--t-lg);
+  letter-spacing: -0.025em;
+  max-width: 28ch;
+}
+
+.case__text {
+  margin-top: 0.6rem;
+  font-size: var(--t-sm);
+  line-height: 1.6;
+  color: var(--ink-dim);
+  max-width: 48ch;
+}
+
+.case__quote {
+  margin-top: 0.85rem;
+  padding-left: 0.85rem;
+  border-left: 2px solid rgba(20, 18, 15, 0.25);
+  font-size: var(--t-sm);
+  line-height: 1.55;
+  color: var(--ink);
+  max-width: 46ch;
+}
+
+/* мозаика работ */
+
+.mosaic {
+  margin-top: clamp(1.5rem, 3vh, 2.5rem);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: clamp(110px, 13vw, 175px);
+  gap: 0.4rem;
+}
+
+.tile {
+  position: relative;
+  overflow: hidden;
+  background: #ddd7ce;
+}
+
+.tile--tall {
+  grid-row: span 2;
+}
+
+.tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--ease);
+}
+
+.tile:hover img {
+  transform: scale(1.03);
+}
+
+.tile__cap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.75rem 0.6rem 0.5rem;
+  background: linear-gradient(to top, rgba(10, 9, 8, 0.8), rgba(10, 9, 8, 0));
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem;
+  font: 400 0.6875rem / 1.3 var(--mono);
+  color: #fff;
+}
+
+.tile__cap b {
+  font-weight: 500;
+}
+
+.tile__cap span {
+  color: rgba(255, 255, 255, 0.64);
+}
+
+.works__note {
+  margin-top: 1.25rem;
+  font-size: var(--t-xs);
+  color: var(--ink-mute);
+  max-width: 60ch;
+}
+
+/* ── 05 залы ─────────────────────────────────────────────── */
+
+.places {
+  padding-top: 0;
+}
+
+.places__list {
+  margin-top: clamp(1.75rem, 4vh, 2.5rem);
+  display: grid;
+  gap: clamp(2.5rem, 6vh, 4.5rem);
+}
+
+.place {
+  display: grid;
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  align-items: start;
+}
+
+/* Залы намеренно разного масштаба: большой цокольный и маленький при бане. */
+.place--main {
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+}
+
+.place--small {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+  padding-top: clamp(2rem, 4vh, 3rem);
+  border-top: 1px solid var(--line-ink-soft);
+}
+
+.place--small .place__media {
+  order: 2;
+}
+
+.place--small .place__body {
+  order: 1;
+}
+
+.place__media img {
+  width: 100%;
+  background: #ddd7ce;
+}
+
+/* Маленький зал и в кадре меньше: горизонтальный формат вместо портретного. */
+.place--small .place__media img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: 50% 32%;
+}
+
+.place__role {
+  font: 500 var(--t-xs) var(--mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #966a2c;
+}
+
+.place__title {
+  margin-top: 0.5rem;
+  font-size: var(--t-xl);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.place__title small {
+  display: block;
+  margin-top: 0.35rem;
+  font: 400 var(--t-sm) var(--mono);
+  letter-spacing: 0;
+  color: var(--ink-mute);
+}
+
+.place--small .place__title {
+  font-size: var(--t-lg);
+}
+
+.place__lead {
+  margin-top: 1rem;
+  font-size: var(--t-sm);
+  line-height: 1.6;
+  color: var(--ink-dim);
+  max-width: 56ch;
+}
+
+.quote--place {
+  margin-top: 1rem;
+  padding-left: 0.85rem;
+  border-left: 2px solid rgba(20, 18, 15, 0.25);
+  max-width: 48ch;
+}
+
+.quote--place p {
+  color: var(--ink);
+}
+
+.quote--place footer {
+  color: var(--ink-mute);
+}
+
+.place__facts {
+  margin-top: 1.25rem;
+}
+
+.place__facts div {
+  display: grid;
+  grid-template-columns: 7rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.55rem 0;
+  border-top: 1px solid var(--line-ink-soft);
+  font-size: var(--t-sm);
+}
+
+.place__facts dt {
+  font: 400 var(--t-xs) var(--mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  padding-top: 0.15rem;
+}
+
+.place__facts dd {
+  color: var(--ink-dim);
+}
+
+.place__how {
+  margin-top: 1.25rem;
+  padding: 0.75rem 0.9rem;
+  border-left: 2px solid var(--ink);
+  background: rgba(20, 18, 15, 0.04);
+  font-size: var(--t-sm);
+  line-height: 1.55;
+  color: var(--ink-dim);
+  max-width: 52ch;
+}
+
+.place__links {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.place__links a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--line-ink);
+  border-radius: var(--r-sm);
+  font-size: var(--t-sm);
+  transition: border-color 0.18s var(--ease), background-color 0.18s var(--ease);
+}
+
+.place__links a:hover {
+  border-color: var(--ink);
+  background: rgba(20, 18, 15, 0.05);
+}
+
+/* ── 06 запись ───────────────────────────────────────────── */
+
+.booking__grid {
+  margin-top: clamp(2rem, 4vh, 3rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: clamp(1.75rem, 4vw, 3.5rem);
+  align-items: start;
+}
+
+.booking__ways {
+  display: grid;
+  border-top: 1px solid var(--line-soft);
+}
+
+.way {
+  display: grid;
+  gap: 0.25rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--line-soft);
+  transition: padding-left 0.22s var(--ease);
+}
+
+.way:hover {
+  padding-left: 0.5rem;
+}
+
+.way__k {
+  font: 400 var(--t-xs) var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fg-mute);
+}
+
+.way__v {
+  font-size: var(--t-lg);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.way:hover .way__v {
+  color: var(--brass);
+}
+
+.way__n {
+  font-size: var(--t-sm);
+  color: var(--fg-dim);
+  max-width: 44ch;
+}
+
+.booking__prep h3 {
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.steps {
+  counter-reset: s;
+}
+
+.steps li {
+  counter-increment: s;
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  gap: 0.5rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--line-soft);
+  font-size: var(--t-sm);
+  line-height: 1.55;
+  color: var(--fg-dim);
+}
+
+.steps li::before {
+  content: '0' counter(s);
+  font: 400 var(--t-xs) var(--mono);
+  color: var(--brass);
+  padding-top: 0.2rem;
+}
+
+.steps b {
+  color: var(--fg);
+  font-weight: 500;
+}
+
+.booking__mini {
+  margin-top: 1rem;
+  font-size: var(--t-xs);
+  line-height: 1.55;
+  color: var(--fg-mute);
+  max-width: 48ch;
+}
+
+/* ── подвал ──────────────────────────────────────────────── */
+
+.foot {
+  padding-block: clamp(2rem, 5vh, 3.5rem);
+  border-top: 1px solid var(--line-soft);
+  background: var(--bg-sunk);
+}
+
+.foot__in {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.5rem, 3vw, 3rem);
+  align-items: start;
+}
+
+.foot__col {
+  display: grid;
+  gap: 0.35rem;
+  align-content: start;
+  font-size: var(--t-sm);
+  color: var(--fg-dim);
+}
+
+.foot__name {
+  font-weight: 600;
+  color: var(--fg);
+}
+
+.foot__col a:hover {
+  color: var(--brass);
+}
+
+.foot__col--note {
+  font-size: var(--t-xs);
+  line-height: 1.6;
+  color: var(--fg-mute);
+  max-width: 46ch;
+}

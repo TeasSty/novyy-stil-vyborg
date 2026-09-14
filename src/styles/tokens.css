@@ -1,0 +1,47 @@
+:root {
+  /* Цвета сняты с двух реальных залов: побелённый кирпич цоколя, тёплые
+     лампы, бетон и магента из фирменного знака. */
+  --bg: #0f0e0d;
+  --bg-raise: #171513;
+  --bg-sunk: #0a0908;
+  --paper: #ece7df;
+  --paper-raise: #f5f2ec;
+
+  --fg: #efeae3;
+  --fg-dim: #a8a098;
+  --fg-mute: #7b736a;
+
+  --ink: #14120f;
+  --ink-dim: #565049;
+  --ink-mute: #8c8478;
+
+  --brass: #c79a5b;
+  --accent: #e0197e;
+  --accent-soft: rgba(224, 25, 126, 0.14);
+
+  --line: rgba(239, 234, 227, 0.16);
+  --line-soft: rgba(239, 234, 227, 0.08);
+  --line-ink: rgba(20, 18, 15, 0.16);
+  --line-ink-soft: rgba(20, 18, 15, 0.08);
+
+  --sans: 'Golos Text', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  --shell: 1280px;
+  --pad: clamp(1.25rem, 4vw, 4rem);
+
+  /* Шкала набрана на 1.25, крупные кегли — через clamp. */
+  --t-xs: 0.75rem;
+  --t-sm: 0.875rem;
+  --t-base: 1rem;
+  --t-md: clamp(1.0625rem, 0.3vw + 1rem, 1.1875rem);
+  --t-lg: clamp(1.25rem, 0.6vw + 1.1rem, 1.5rem);
+  --t-xl: clamp(1.5rem, 1.2vw + 1.2rem, 2.125rem);
+  --t-2xl: clamp(1.875rem, 2.4vw + 1.2rem, 3rem);
+  --t-3xl: clamp(2.25rem, 4.4vw + 1rem, 4.25rem);
+
+  --r-sm: 2px;
+  --r-md: 3px;
+
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}

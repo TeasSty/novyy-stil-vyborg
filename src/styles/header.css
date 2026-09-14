@@ -1,0 +1,220 @@
+.head {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.head__bar {
+  max-width: var(--shell);
+  margin-inline: auto;
+  padding: 0.75rem var(--pad);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.mark {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 0 0 auto;
+  min-height: 44px;
+}
+
+.mark__glyph {
+  width: 40px;
+  height: 40px;
+  color: var(--fg);
+}
+
+.mark__glyph text {
+  font: 600 12.5px var(--sans);
+}
+
+.mark__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.mark__text b {
+  font-size: var(--t-sm);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.mark__text i {
+  font-style: normal;
+  font-size: 0.6875rem;
+  font-family: var(--mono);
+  letter-spacing: 0.04em;
+  color: var(--fg-mute);
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: auto;
+  font-size: var(--t-sm);
+  color: var(--fg-dim);
+}
+
+.nav a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  transition: color 0.18s var(--ease);
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.6rem;
+  height: 1px;
+  background: var(--brass);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.22s var(--ease);
+}
+
+.nav a:hover,
+.nav a[aria-current='true'] {
+  color: var(--fg);
+}
+
+.nav a:hover::after,
+.nav a[aria-current='true']::after {
+  transform: scaleX(1);
+}
+
+.head__act {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.head__tel {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font: 500 var(--t-sm) var(--mono);
+  letter-spacing: -0.01em;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  transition: border-color 0.18s var(--ease);
+  white-space: nowrap;
+}
+
+.head__tel:hover {
+  border-color: var(--brass);
+}
+
+.burger {
+  display: none;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 0.25rem;
+  font-size: var(--t-sm);
+}
+
+.burger__box {
+  display: grid;
+  gap: 5px;
+  width: 22px;
+}
+
+.burger__box i {
+  display: block;
+  height: 1.5px;
+  background: var(--fg);
+  transition: transform 0.24s var(--ease), opacity 0.2s var(--ease);
+}
+
+.burger[aria-expanded='true'] .burger__box i:first-child {
+  transform: translateY(3.25px) rotate(45deg);
+}
+
+.burger[aria-expanded='true'] .burger__box i:last-child {
+  transform: translateY(-3.25px) rotate(-45deg);
+}
+
+/* Полноэкранное меню: фиксируется по всему вьюпорту, без щелей. */
+.menu {
+  position: fixed;
+  inset: 0;
+  z-index: 39;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 5.5rem var(--pad) calc(2rem + env(safe-area-inset-bottom));
+  background: var(--bg);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.menu[hidden] {
+  display: none;
+}
+
+.menu__nav {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--line-soft);
+}
+
+.menu__nav a {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--line-soft);
+  font-size: var(--t-xl);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.menu__nav em {
+  font: 500 var(--t-xs) var(--mono);
+  font-style: normal;
+  color: var(--brass);
+}
+
+.menu__info {
+  margin-top: auto;
+  padding-bottom: 1.5rem;
+}
+
+.menu__info div {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.menu__info dt {
+  font-size: var(--t-sm);
+  font-weight: 600;
+}
+
+.menu__info dd {
+  font: 400 0.75rem var(--mono);
+  color: var(--fg-mute);
+  letter-spacing: -0.01em;
+}
+
+.menu__foot {
+  display: grid;
+  gap: 0.75rem;
+}
+
+body.is-locked {
+  overflow: hidden;
+}

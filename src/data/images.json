@@ -1,0 +1,182 @@
+{
+ "place-lenina": [
+  {
+   "w": 660,
+   "h": 827,
+   "file": "place-lenina-660.webp"
+  },
+  {
+   "w": 1200,
+   "h": 1504,
+   "file": "place-lenina-1200.webp"
+  }
+ ],
+ "place-akulova": [
+  {
+   "w": 520,
+   "h": 693,
+   "file": "place-akulova-520.webp"
+  },
+  {
+   "w": 960,
+   "h": 1280,
+   "file": "place-akulova-960.webp"
+  }
+ ],
+ "case-cut-before": [
+  {
+   "w": 480,
+   "h": 589,
+   "file": "case-cut-before-480.webp"
+  },
+  {
+   "w": 900,
+   "h": 1104,
+   "file": "case-cut-before-900.webp"
+  }
+ ],
+ "case-cut-after": [
+  {
+   "w": 480,
+   "h": 589,
+   "file": "case-cut-after-480.webp"
+  },
+  {
+   "w": 900,
+   "h": 1104,
+   "file": "case-cut-after-900.webp"
+  }
+ ],
+ "case-color": [
+  {
+   "w": 760,
+   "h": 699,
+   "file": "case-color-760.webp"
+  },
+  {
+   "w": 1300,
+   "h": 1196,
+   "file": "case-color-1300.webp"
+  }
+ ],
+ "w-barber": [
+  {
+   "w": 420,
+   "h": 560,
+   "file": "w-barber-420.webp"
+  },
+  {
+   "w": 820,
+   "h": 1093,
+   "file": "w-barber-820.webp"
+  }
+ ],
+ "w-blonde": [
+  {
+   "w": 420,
+   "h": 560,
+   "file": "w-blonde-420.webp"
+  },
+  {
+   "w": 820,
+   "h": 1093,
+   "file": "w-blonde-820.webp"
+  }
+ ],
+ "w-shag": [
+  {
+   "w": 420,
+   "h": 560,
+   "file": "w-shag-420.webp"
+  },
+  {
+   "w": 820,
+   "h": 1093,
+   "file": "w-shag-820.webp"
+  }
+ ],
+ "w-combo": [
+  {
+   "w": 420,
+   "h": 414,
+   "file": "w-combo-420.webp"
+  },
+  {
+   "w": 820,
+   "h": 809,
+   "file": "w-combo-820.webp"
+  }
+ ],
+ "w-lashes": [
+  {
+   "w": 420,
+   "h": 560,
+   "file": "w-lashes-420.webp"
+  },
+  {
+   "w": 820,
+   "h": 1093,
+   "file": "w-lashes-820.webp"
+  }
+ ],
+ "w-nails-pink": [
+  {
+   "w": 420,
+   "h": 560,
+   "file": "w-nails-pink-420.webp"
+  },
+  {
+   "w": 820,
+   "h": 1093,
+   "file": "w-nails-pink-820.webp"
+  }
+ ],
+ "w-nails-nude": [
+  {
+   "w": 420,
+   "h": 560,
+   "file": "w-nails-nude-420.webp"
+  },
+  {
+   "w": 820,
+   "h": 1093,
+   "file": "w-nails-nude-820.webp"
+  }
+ ],
+ "w-nails-blue": [
+  {
+   "w": 420,
+   "h": 560,
+   "file": "w-nails-blue-420.webp"
+  },
+  {
+   "w": 820,
+   "h": 1093,
+   "file": "w-nails-blue-820.webp"
+  }
+ ],
+ "w-nails-red": [
+  {
+   "w": 420,
+   "h": 560,
+   "file": "w-nails-red-420.webp"
+  },
+  {
+   "w": 820,
+   "h": 1093,
+   "file": "w-nails-red-820.webp"
+  }
+ ],
+ "w-kids": [
+  {
+   "w": 420,
+   "h": 559,
+   "file": "w-kids-420.webp"
+  },
+  {
+   "w": 820,
+   "h": 1092,
+   "file": "w-kids-820.webp"
+  }
+ ]
+}
