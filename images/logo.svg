@@ -1,9 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label=">2K9 AB8;L">
-  <circle cx="100" cy="100" r="96" fill="#f5f2ed"/>
-  <circle cx="100" cy="100" r="92" fill="none" stroke="#1a1a1a" stroke-width="2"/>
-  <circle cx="100" cy="100" r="88" fill="none" stroke="#c62828" stroke-width="1.2" opacity="0.85"/>
-  <circle cx="100" cy="100" r="84" fill="none" stroke="#1e3a5f" stroke-width="1.2" opacity="0.75"/>
-  <text x="100" y="88" text-anchor="middle" font-family="Arial Narrow, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="3" fill="#1a1a1a">+</text>
-  <line x1="58" y1="100" x2="142" y2="100" stroke="#1a1a1a" stroke-width="1.5"/>
-  <text x="100" y="126" text-anchor="middle" font-family="Arial Narrow, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="4" fill="#1a1a1a">!",</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Novyy Stil">
+  <circle cx="100" cy="100" r="96" fill="#fff" stroke="#111" stroke-width="6"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#e4007c" stroke-width="2"/>
+  <rect x="42" y="38" width="116" height="22" rx="2" fill="#111"/>
+  <text x="100" y="54" text-anchor="middle" fill="#e4007c" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5">&#x421;&#x410;&#x41B;&#x41E;&#x41D; &#x41A;&#x420;&#x410;&#x421;&#x41E;&#x422;&#x42B;</text>
+  <text x="100" y="108" text-anchor="middle" fill="#111" font-family="Arial Black, Arial, sans-serif" font-size="28" font-weight="900" letter-spacing="1">&#x41D;&#x41E;&#x412;&#x42B;&#x419;</text>
+  <line x1="58" y1="118" x2="142" y2="118" stroke="#111" stroke-width="3"/>
+  <circle cx="100" cy="118" r="3.5" fill="#e4007c"/>
+  <text x="100" y="152" text-anchor="middle" fill="#111" font-family="Arial Black, Arial, sans-serif" font-size="28" font-weight="900" letter-spacing="1">&#x421;&#x422;&#x418;&#x41B;&#x42C;</text>
 </svg>
